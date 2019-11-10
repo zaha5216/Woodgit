@@ -1,0 +1,71 @@
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type"
+        content="text/html"; charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}Woodmart{% endblock %} Магазин строительных материлов.</title>
+        {% bootstrap_css %}
+       <link rel="stylesheet" type="text/css"
+        href="{% static 'main8/style.css' %}">
+        {% bootstrap_javascript jquery='slim' %}
+        {% block searchform %}
+        {% endblock %}
+    </head>
+
+<header class="mb-3">
+    <h3 class="text-center" style="color: white" >Woodmart магазин строительных материалов.</h3>
+</header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="{% url 'main:index' %}">Главная</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        <li class="nav-item active"></li>
+    <div class="dropdown open">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Пиломатериалы
+      </button>
+      <div class="dropdown-menu">
+        <h6 class="dropdown-header"></h6>
+        <a class="dropdown-item" href="{% url 'main:doska' page='doska' %}">Доска</a>
+        <a class="dropdown-item" href="{% url 'main:brus' page='brus' %}">Брус</a>
+        <a class="dropdown-item" href="{% url 'main:brusok' page='brusok' %}">Брусок</a>
+        <a class="dropdown-item" href="{% url 'main:vagonka' page='vagonka' %}">Вагонка</a>
+        <a class="dropdown-item" href="{% url 'main:imitacia_brusa' page='imitacia_brusa' %}">Имитация бруса</a>
+        <a class="dropdown-item" href="{% url 'main:terasnaya_doska' page='terasnaya_doska' %}">Терасная доска </a>
+        <a class="dropdown-item" href="{% url 'main:shpuntovanaya_doska' page='shpuntovanaya_doska' %}">Шпунтованная доска </a>
+      </div>
+    </div>
+    <div class="dropdown open">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Метизы
+      </button>
+      <div class="dropdown-menu">
+        <h6 class="dropdown-header"></h6>
+        <a class="dropdown-item " href="#">Гвозди</a>
+        <a class="dropdown-item" href="#">Саморезы</a>
+        <a class="dropdown-item" href="#"></a>
+      </div>
+    </div>
+    </ul>
+  </div>
+</nav>
+{% block content %}
+
+{% endblock %}
+<div c
+    <div class="fixed-bottom" style="margin-top:-100px">
+        <footer class="footer mt-3" style=" margin-bottom: -8px; background:white;" >
+              <h5 class="text-center font-italic" >Woodmart магазин строительных материлов.</h5>
+              <h5 class="text-center"><a style="color:red"  href="tel:+79140259955"> Позвоните нам<br> по телефону: 8-981-737-52-16</a></h5>
+        </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+{% extends "layout/basic.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row" style="margin-top: 10px">
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                     <a href="{% url 'main:doska' page='doska' %}">
+                        <div class="card-body"style="color:black">
+                          <div class="card">
+                          <img class="card-img-top main-image" src="/static/main8/12.jpg" >
+                          <div class="card-body">
+                            <h4 class="card-title">Доска</h4>
+                            <p class="card-text">
+                               Большой выбор доски<br> сухой,
+                                естественной<br> влажности, а так же <br>уже антисептированной
+                            </p>
+                          </div>
+                         </div>
+                        </div>
+                     </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:brus' page='brus' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main8/brus.jpg"  >
+                      <div class="card-body">
+                        <h4 class="card-title">Брус</h4>
+                        <p class="card-text">
+                            Брус высокого качества<br>естественной влажности<br>
+                            и и сухой<br><br>
+                        </p>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:brusok' page='brusok' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main8/brusok.jpg"  >
+                      <div class="card-body">
+                        <h4 class="card-title">Брусок</h4>
+                        <p class="card-text">
+                            Брусок в наличии сухой <br>строганный
+                            и <br>естественной влажности<br><br>
+                        </p>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:vagonka' page='vagonka' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main8/vagon.jpg"  >
+                      <div class="card-body">
+                        <h4 class="card-title">Вагонка</h4>
+                        <p class="card-text">
+                            Вагонка сорт А-В<br>Евровагонка<br><br>
+                            <br>
+                        </p>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:imitacia_brusa' page='imitacia_brusa' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main8/imitac.jpg"  >
+                      <div class="card-body">
+                        <h4 class="card-title">Имитациция<br>бруса</h4>
+                        <p class="card-text">
+                            Разные размеры,<br>высокое качество
+                        </p>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:terasnaya_doska' page='terasnaya_doska' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main8/teras.jpg"  >
+                      <div class="card-body">
+                        <h4 class="card-title">Терасная<br>доска</h4>
+                        <p class="card-text">
+                            Высое качество<br> разные размеры
+                        </p>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:shpuntovanaya_doska' page='shpuntovanaya_doska' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main8/shpnt.jpg"  >
+                      <div class="card-body">
+                        <h4 class="card-title">Шпунтованная<br> доска</h4>
+                        <p class="card-text">
+                            Воское качество<br>Разные размеры<br>
+
+                        </p>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

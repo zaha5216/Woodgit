@@ -1,0 +1,19 @@
+
+
+body {
+    background-image: url("wd.jpg");
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+}
+img.main-image {
+    width: 230px;
+    height: 200px;
+}
+img.additional-image{
+    width: 180px;
+}
+
+
+
+
+
