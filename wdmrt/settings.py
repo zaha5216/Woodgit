@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'wdmrt.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd72hbh87v5gnif',
-        'USE./R': 'yumjcepxeefrrn',
-        'PASSWORD': '194f48dc0ae6011b39685071d757c2149410590f20951b98695b95f11c5c49b0', #might be empty string ''
-        'HOST': 'localhost',
+        'NAME': 'de2q3jr9bjdel9',
+        'USER': 'xctouiclzkazsy',
+        'PASSWORD': '36295d4f7daf726f574befdd8b8325c55c2a037570310d09c95da2903abf7485', #might be empty string ''
+        'HOST': 'ec2-54-225-115-177.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
