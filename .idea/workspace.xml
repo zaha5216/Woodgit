@@ -77,7 +77,7 @@
         <counts>
           <entry key="Procfile" value="1" />
           <entry key="css" value="1" />
-          <entry key="gitignor" value="1" />
+          <entry key="gitignor" value="2" />
           <entry key="html" value="72" />
           <entry key="jpeg" value="1" />
           <entry key="jpg" value="6" />
@@ -90,7 +90,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="72" />
           <entry key="Image" value="7" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Python" value="22" />
         </counts>
       </usages-collector>
@@ -158,7 +158,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wdmrt/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="206">
               <caret line="98" column="18" lean-forward="true" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
               <folding>
                 <element signature="e#306#315#0" expanded="true" />
@@ -169,38 +169,18 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/views.py">
+        <entry file="file://$PROJECT_DIR$/.gitignor">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3615">
-              <caret line="341" column="19" selection-start-line="341" selection-start-column="19" selection-end-line="341" selection-end-column="19" />
-              <folding>
-                <element signature="e#15#50#0" expanded="true" />
-                <element signature="e#1372#1547#0" />
-                <element signature="e#1584#1759#0" />
-                <element signature="e#1798#1973#0" />
-                <element signature="e#2013#2188#0" />
-                <element signature="e#2229#2404#0" />
-                <element signature="e#2446#2621#0" />
-                <element signature="e#2667#2842#0" />
-                <element signature="e#2880#3055#0" />
-                <element signature="e#3096#3271#0" />
-                <element signature="e#3310#3485#0" />
-                <element signature="e#3523#3698#0" />
-                <element signature="e#3740#3915#0" />
-                <element signature="e#3957#4132#0" />
-                <element signature="e#4174#4349#0" />
-                <element signature="e#4389#4564#0" />
-                <element signature="e#4604#4779#0" />
-                <element signature="e#4827#5002#0" />
-                <element signature="e#5048#5223#0" />
-                <element signature="e#5918#6093#0" />
-                <element signature="e#6366#6541#0" />
-                <marker date="1584707450000" expanded="true" signature="5262:5267" ph="..." />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -318,12 +298,12 @@
         <option value="$PROJECT_DIR$/main/urls.py" />
         <option value="$PROJECT_DIR$/templates/main/Barlinek_piccolo.html" />
         <option value="$PROJECT_DIR$/templates/main/Caldera_piccolo.html" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/main/admin.py" />
         <option value="$PROJECT_DIR$/main/forms.py" />
         <option value="$PROJECT_DIR$/main/models.py" />
         <option value="$PROJECT_DIR$/main/views.py" />
         <option value="$PROJECT_DIR$/wdmrt/settings.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -562,13 +542,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/static/main9/12.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignor">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main/imitacia_brusa.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -841,19 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding>
-            <element signature="e#84#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3615">
@@ -929,9 +889,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding>
+            <element signature="e#84#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignor">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wdmrt/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="206">
           <caret line="98" column="18" lean-forward="true" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
           <folding>
             <element signature="e#306#315#0" expanded="true" />
