@@ -8,8 +8,6 @@ from .views import vagonka_page
 from .views import imitacia_page
 from .views import terasnaya_page
 from .views import shpuntovanaya_page
-from .views import by_rubric
-from .views import detail
 from .views import barlinek_page
 from .views import askania_page
 from .views import almond_page
@@ -46,8 +44,6 @@ urlpatterns = [
     path('<str:page>/', imitacia_page, name='imitacia_brusa'),
     path('<str:page>/', terasnaya_page, name='terasnaya_doska'),
     path('<str:page>/', shpuntovanaya_page, name='shpuntovanaya_doska'),
-    path('<int:rubric_pk>/<int:pk>/', detail, name='detail'),
-    path('<int:pk>/', by_rubric, name='by_rubric'),
     path('<str:page>/', barlinek_page, name='barlinek'),
     path('<str:page>/', askania_page, name='Askania-piccolo'),
     path('<str:page>/', almond_page, name='Almond_grande'),
