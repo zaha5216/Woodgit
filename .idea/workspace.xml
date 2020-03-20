@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e005858e-e0ca-44c6-ac98-2af7b9c478ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdmrt/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/wdmrt/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="e005858e-e0ca-44c6-ac98-2af7b9c478ad" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,8 +158,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wdmrt/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="90" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="96" selection-end-column="3" />
+            <state relative-caret-position="207">
+              <caret line="98" column="18" lean-forward="true" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
               <folding>
                 <element signature="e#306#315#0" expanded="true" />
               </folding>
@@ -491,7 +488,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="629" y="23" width="651" height="777" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23015873" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -935,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wdmrt/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="96" selection-end-column="3" />
+        <state relative-caret-position="207">
+          <caret line="98" column="18" lean-forward="true" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
           <folding>
             <element signature="e#306#315#0" expanded="true" />
           </folding>
