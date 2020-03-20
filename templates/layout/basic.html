@@ -1,5 +1,8 @@
 {% load bootstrap4 %}
+{% load thumbnail %}
+{% load bootstrap4 %}
 {% load static %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,12 +17,21 @@
         {% bootstrap_javascript jquery='slim' %}
         {% block searchform %}
         {% endblock %}
+        <script type="text/javascript">
+          function openImageWindow(src) {
+            var image = new Image();
+            image.src = src;
+            var width = image.width;
+            var height = image.height;
+            window.open(src,"Image","width=" + width + ",height=" + height);
+          }
+        </script>
     </head>
 
 <header class="mb-3">
     <h3 class="text-center" style="color:white" >Woodmart магазин строительных материалов.</h3>
 </header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light " style="background:#F0FFF0">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -29,42 +41,75 @@
     <ul class="navbar-nav mr-auto mt-2 mt-md-0">
         <li class="nav-item active"></li>
     <div class="dropdown open">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn  dropdown-toggle" style="background:#FAFAD2;" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Пиломатериалы
       </button>
-      <div class="dropdown-menu">
-        <h6 class="dropdown-header"></h6>
+      <div class="dropdown-menu text-center" style="background:#FAFAD2"  >
         <a class="dropdown-item" href="{% url 'main:doska' page='doska' %}">Доска</a>
         <a class="dropdown-item" href="{% url 'main:brus' page='brus' %}">Брус</a>
         <a class="dropdown-item" href="{% url 'main:brusok' page='brusok' %}">Брусок</a>
         <a class="dropdown-item" href="{% url 'main:vagonka' page='vagonka' %}">Вагонка</a>
         <a class="dropdown-item" href="{% url 'main:imitacia_brusa' page='imitacia_brusa' %}">Имитация бруса</a>
-        <a class="dropdown-item" href="{% url 'main:terasnaya_doska' page='terasnaya_doska' %}">Терасная доска </a>
-        <a class="dropdown-item" href="{% url 'main:shpuntovanaya_doska' page='shpuntovanaya_doska' %}">Шпунтованная доска </a>
-      </div>
-    </div>
-    <div class="dropdown open">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Метизы
+            <a class="dropdown-item" href="{% url 'main:terasnaya_doska' page='terasnaya_doska' %}">Терасная доска </a>
+            <a class="dropdown-item" href="{% url 'main:shpuntovanaya_doska' page='shpuntovanaya_doska' %}">Шпунтованная доска </a>
+          </div>
+        </div>
+    <!--<div class="dropdown open">-->
+      <!--<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+        <!--Метизы-->
+      <!--</button>-->
+      <!--<div class="dropdown-menu">-->
+        <!--<h6 class="dropdown-header"></h6>-->
+        <!--<a class="dropdown-item " href="#">Гвозди</a>-->
+        <!--<a class="dropdown-item" href="#">Саморезы</a>-->
+        <!--<a class="dropdown-item" href="#"></a>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--</ul>-->
+  <!--</div>-->
+  <div class="dropdown open">
+      <button class="btn  dropdown-toggle" style="background:#FFDEAD;" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 100px">
+        Паркет
       </button>
-      <div class="dropdown-menu">
-        <h6 class="dropdown-header"></h6>
-        <a class="dropdown-item " href="#">Гвозди</a>
-        <a class="dropdown-item" href="#">Саморезы</a>
-        <a class="dropdown-item" href="#"></a>
+      <div class="dropdown-menu text-center" style="background:#FFDEAD">
+        <h6 class="dropdown-header">Бренды:</h6>
+        <a class="dropdown-item" href="{% url 'main:barlinek' page='barlinek' %}">Barlinek</a>
+        <a class="dropdown-item" href="{% url 'main:brus' page='brus' %}">Ellett</a>
+        <a class="dropdown-item" href="{% url 'main:brusok' page='brusok' %}">Karelia</a>
+        <a class="dropdown-item" href="{% url 'main:vagonka' page='vagonka' %}">Polarwood</a>
+        <a class="dropdown-item" href="{% url 'main:imitacia_brusa' page='imitacia_brusa' %}">Kahrs</a>
+            <a class="dropdown-item" href="{% url 'main:terasnaya_doska' page='terasnaya_doska' %}">Терасная доска </a>
+            <a class="dropdown-item" href="{% url 'main:shpuntovanaya_doska' page='shpuntovanaya_doska' %}">Шпунтованная доска </a>
       </div>
-    </div>
-    </ul>
   </div>
+    <div class="dropdown open">
+      <button class="btn  dropdown-toggle" style="background:#CDCDB4;" type="button" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 100px">
+        Плинтуса
+      </button>
+      <div class="dropdown-menu text-center" style="background:#CDCDB4">
+        <a class="dropdown-item" href="{% url 'main:doska' page='doska' %}">Доска</a>
+        <a class="dropdown-item" href="{% url 'main:brus' page='brus' %}">Брус</a>
+        <a class="dropdown-item" href="{% url 'main:brusok' page='brusok' %}">Брусок</a>
+        <a class="dropdown-item" href="{% url 'main:vagonka' page='vagonka' %}">Вагонка</a>
+        <a class="dropdown-item" href="{% url 'main:imitacia_brusa' page='imitacia_brusa' %}">Имитация бруса</a>
+            <a class="dropdown-item" href="{% url 'main:terasnaya_doska' page='terasnaya_doska' %}">Терасная доска </a>
+            <a class="dropdown-item" href="{% url 'main:shpuntovanaya_doska' page='shpuntovanaya_doska' %}">Шпунтованная доска </a>
+      </div>
+  </div>
+  </ul>
+</div>
 </nav>
+
 {% block content %}
 
 {% endblock %}
-    <div class="fixed-bottom" style="margin-top:-100px">
-        <footer class="footer mt-3" style=" margin-bottom: -8px; background:white;" >
-              <h5 class="text-center font-italic" >Woodmart магазин строительных материлов.</h5>
-              <h5 class="text-center"><a style="color:red"  href="tel:+79140259955"> Позвоните нам<br> по телефону: 8-981-737-52-16</a></h5>
-        </footer>
+
+<div  style="margin-top: 450px">
+    <footer  style="background:white;" class="footer mt-auto py-3">
+      <div class="container" >
+            <p class="text-center font-italic" >Woodmart магазин строительных материлов.<a style="color:red"  href="tel:+7981775216"> Позвоните нам по номеру: 8-981-737-52-16</a></p>
+      </div>
+    </footer>
 </div>
 </body>
 </html>

@@ -13,7 +13,9 @@ img.additional-image{
     width: 180px;
 }
 
-
+footer {
+    flex-shrink: 0;
+}
 
 
 

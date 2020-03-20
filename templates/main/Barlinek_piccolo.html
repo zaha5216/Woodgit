@@ -1,0 +1,405 @@
+{% extends "layout/basic.html" %}
+
+{% block content %}
+
+
+<div class="container">
+    <div class="row" style="margin-top: 10px">
+        <div style="background:white" class="text-black-50 text-center"><h5> <br>Группа компаний Barlinek -
+            это один из мировых лидеров по производству
+            деревянных напольных покрытий с суммарной мощностью
+            производства более 9 миллионов квадратных метров в год.
+            Главный продукт компании – паркетная доска Barlinek,
+            которая производится из благородных видов древесины.</h5>
+            <br>
+
+          <ul class="pagination pagination-sm" style="margin-left:20px">
+            <li >
+              <h4> Серии Barlinek:</h4>
+            </li>
+            <li class="page-item"><a class="btn btn-warning" href="{% url 'main:barlinek' page='barlinek' %}">Grande</a></li>
+            <li class="page-item"><a class="btn btn-info"href="{% url 'main:Barlinek_piccolo' page='Barlinek_piccolo' %}">Piccolo</a></li>
+            <li class="page-item"><a  class="btn btn-success" href="#">Molti</a></li>
+            <li class="page-item">
+            </li>
+          </ul>
+        <h4 style="color:black">Серия Barlinek Piccolo:</h4>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Almond_piccolo' page='Almond_piccolo' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/Almond-Piccolo.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>дуб<br>ALMOND PICCOLO</h5>
+                        <p class="card-text"><br>
+                            Тип: Однополосный</p>
+                          <b>Габариты:130х1092мм.</b><br>
+                        <b>Цена за м^2: 2600 руб.
+                            <br>Упаковка: 2574 руб.</b>
+                        </p>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Apricot_sorbet_piccolo' page='Apricot_sorbet_piccolo' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/Apricot-Sorbet-Piccolo.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>APRICOT SORBET<br>PICCOLO</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:130х1092мм</b><br>
+                        <b>Цена за м^2: 3000 руб.
+                            <br> Упаковка: 2970 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Askania-piccolo' page='Askania-piccolo' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-Askania-Piccolo.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>ASKANIA PICCOLO</h5>
+                        <p class="card-text"><br>
+                            Тип: Однополосный</p>
+                          <b>Габариты:130х1092мм</b><br>
+                        <b>Цена за м^2: 2700 руб.
+                            <br> Упаковка: 2673 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Brown_shugar_piccolo' page='Brown_shugar_piccolo' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/Brown-Sugar.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>BROWN SUGAR<br>PICCOLO</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:130х1092мм</b><br>
+                        <b>Цена за м^2: 2800 руб.
+                            <br> Упаковка: 2772 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Coconut_piccolo' page='Coconut_piccolo' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/Coconut-Piccolo.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>COCONUT PICCOLO</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:130х1092мм</b><br>
+                        <b>Цена за м^2: 3100 руб.
+                            <br> Упаковка: 3069 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Espresso_piccolo' page='Espresso_piccolo' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/Espresso-Piccolo.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>ESPRESSO PICCOLO</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:130х1092мм</b><br>
+                        <b>Цена за м^2: 2800 руб.
+                            <br> Упаковка: 2772 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Nugat_piccolo' page='Nugat_piccolo' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/nugat_piccolo.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>NUGAT PICCOLO</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:130x2200мм</b><br>
+                        <b>Цена за м^2: 2800 руб.
+                            <br> Упаковка: 5600 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Peach_piccolo' page='Peach_piccolo' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/Peach-Piccolo.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>PEACH PICCOLO</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:130х1092мм</b><br>
+                        <b>Цена за м^2: 2850 руб.
+                            <br> Упаковка: 2821 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Snowflakes_piccolo' page='Snowflakes_piccolo' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/Snow-Flakes-Piccolo.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>Snowflakes Piccolo</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:130х1092мм</b><br>
+                        <b>Цена за м^2: 2850 руб.
+                            <br> Упаковка: 2821 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Porto_grande' page='Porto_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-Porto-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            Ясень <br>CALDERA PICCOLO</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:180х2200</b><br>
+                        <b>Цена за м^2: 2500 руб.
+                            <br>Упаковка: 5000 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Caldera_piccolo' page='Caldera_piccolo' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/caldera_piccolo.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            Ясень <br>CALDERA PICCOLO</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:180х2200</b><br>
+                        <b>Цена за м^2: 2500 руб.
+                            <br>Упаковка: 5000 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:White_truffle_grande' page='White_truffle_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-White-Truffle-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>WHITE TRUFFLE<br> GRANDE</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:180х2200</b><br>
+                        <b>Цена за м^2: 4070 руб.
+                            <br> Упаковка: 11273 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Lemon_sorbet_grande' page='Lemon_sorbet_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/Lemon-Sorbet-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            Ясень <br>LEMON SORBET<br>GRANDE</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:180х2200</b><br>
+                        <b>Цена за м^2: 3600руб.
+                            <br>Упаковка: 9972 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Yasen_coffe_grande' page='Yasen_coffe_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-Coffee-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            Ясень <br>COFFEE GRANDE</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:180х2200</b><br>
+                        <b>Цена за м^2: 3400 руб.
+                            <br>Упаковка: 9418 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Hazelnut_grande' page='Hazelnut_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-Hazelnut-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            Ясень <br>HAZELNUT GRANDE</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:180х2200</b><br>
+                        <b>Цена за м^2: 3750руб.
+                            <br>Упаковка: 10387 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                     <a href="{% url 'main:Askania-piccolo' page='Askania-piccolo' %}">
+                        <div class="card-body"style="color:black">
+                          <div class="card">
+                          <img class="card-img-top main-image" src="/static/main9/-Askania-Piccolo.jpg" >
+                          <div class="card-body">
+                            <h4 class="card-title">Barlinek Дуб<br> Askania</h4>
+                            <p class="card-text">
+                               Паркетная доска<br>
+                              Barlinek Дуб Askania<br> Piccolo 0,65
+                            </p>
+                          </div>
+                         </div>
+                        </div>
+                     </a>
+              </ul>
+          </div>
+        </div>
+    </div>
+</div><
+  <ul class="pagination pagination-sm" style="margin-left:50px">
+    <li >
+      <h5 style="color:black; background:white;"> Серии Barlinek:</h5>
+    </li>
+    <li class="page-item"><a class="btn btn-warning" href="{% url 'main:barlinek' page='barlinek' %}">Grande</a></li>
+    <li class="page-item"><a class="btn btn-info"href="{% url 'main:Barlinek_piccolo' page='Barlinek_piccolo' %}">Piccolo</a></li>
+    <li class="page-item"><a  class="btn btn-success" href="#">Molti</a></li>
+    <li class="page-item">
+    </li>
+  </ul>
+{% endblock %}

@@ -1,0 +1,270 @@
+{% extends "layout/basic.html" %}
+
+{% block content %}
+
+
+<div class="container">
+    <div class="row" style="margin-top: 10px">
+        <div style="background:white" class="text-black-50 text-center"><h5> <br>Группа компаний Barlinek -
+            это один из мировых лидеров по производству
+            деревянных напольных покрытий с суммарной мощностью
+            производства более 9 миллионов квадратных метров в год.
+            Главный продукт компании – паркетная доска Barlinek,
+            которая производится из благородных видов древесины.</h5>
+            <br>
+
+  <ul class="pagination pagination-sm" style="margin-left:20px">
+    <li >
+      <h4> Серии Barlinek:</h4>
+    </li>
+    <li class="page-item"><a class="btn btn-warning" href="{% url 'main:barlinek' page='barlinek' %}">Grande</a></li>
+    <li class="page-item"><a class="btn btn-info"href="{% url 'main:Barlinek_piccolo' page='Barlinek_piccolo' %}">Piccolo</a></li>
+    <li class="page-item"><a  class="btn btn-success" href="#">Molti</a></li>
+    <li class="page-item">
+    </li>
+  </ul>
+        <h4 style="color:black">Серия Barlinek Grande:</h4>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Almond_grande' page='Almond_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/Almond-Grande-wzronik.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>дуб<br>ALMOND GRANDE</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:14х180х2200</b><br>
+                        <b>Цена за м^2: 3650 руб.
+                            <br>Упаковка: 11000 руб.</b>
+                        </p>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Askania_grande' page='Askania_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-Askania-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>ASKANIA GRANDE</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:14х180х2200</b><br>
+                        <b>Цена за м^2: 3700 руб.
+                            <br> Упаковка: 10250 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Calvados_grande' page='Calvados_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-Calvados-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>CALVADOS GRANDE</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:14х180х2200</b><br>
+                        <b>Цена за м^2: 4100 руб.
+                            <br> Упаковка: 11355 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Caramel_grande' page='Caramel_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-Caramel-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>CARAMEL GRANDE</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:14х180х2200</b><br>
+                        <b>Цена за м^2: 4050 руб.
+                            <br> Упаковка: 11218 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Ivory_grande' page='Ivory_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-Ivory-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>IVORY GRANDE</h5>
+                        <p class="card-text"><br>
+                            Тип: Однополосный</p>
+                          <b>Габариты:14х180х2200</b><br>
+                        <b>Цена за м^2: 3800 руб.
+                            <br> Упаковка: 10526 руб.<br>
+                        </b>
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Porto_grande' page='Porto_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-Porto-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>PORTO GRANDE</h5>
+                        <p class="card-text"><br>
+                            Тип: Однополосный</p>
+                          <b>Габариты:180х2200</b><br>
+                        <b>Цена за м^2: 3800 руб.
+                            <br>Упаковка: 10526 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:White_truffle_grande' page='White_truffle_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-White-Truffle-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            дуб <br>WHITE TRUFFLE<br> GRANDE</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:180х2200</b><br>
+                        <b>Цена за м^2: 4070 руб.
+                            <br> Упаковка: 11273 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Lemon_sorbet_grande' page='Lemon_sorbet_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/Lemon-Sorbet-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            Ясень <br>LEMON SORBET<br>GRANDE</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:180х2200</b><br>
+                        <b>Цена за м^2: 3600руб.
+                            <br>Упаковка: 9972 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Yasen_coffe_grande' page='Yasen_coffe_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-Coffee-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            Ясень <br>COFFEE GRANDE</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:180х2200</b><br>
+                        <b>Цена за м^2: 3400 руб.
+                            <br>Упаковка: 9418 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+        <div class="col-sm2" >
+          <div class="card-sm text-center" >
+              <ul class="list-unstyled"  >
+                 <a href="{% url 'main:Hazelnut_grande' page='Hazelnut_grande' %}">
+                    <div class="card-body"style="color:black">
+                      <div class="card">
+                      <img class="card-img-top main-image" src="/static/main9/-Hazelnut-Grande.jpg"  >
+                      <div class="card-body">
+                        <h5 class="card-title">Паркетная доска <br>
+                            Ясень <br>HAZELNUT GRANDE</h5>
+                        <p class="card-text">
+                            Тип: Однополосный</p>
+                          <b>Габариты:180х2200</b><br>
+                        <b>Цена за м^2: 3750руб.
+                            <br>Упаковка: 10387 руб.
+                        </b>
+                      </div>
+                     </div>
+                    </div>
+                 </a>
+              </ul>
+          </div>
+        </div>
+    </div>
+</div><
+  <ul class="pagination pagination-sm" style="margin-left:50px">
+    <li >
+      <h5 style="color:black; background:white;"> Серии Barlinek:</h5>
+    </li>
+    <li class="page-item"><a class="btn btn-warning" href="{% url 'main:barlinek' page='barlinek' %}">Grande</a></li>
+    <li class="page-item"><a class="btn btn-info"href="{% url 'main:Barlinek_piccolo' page='Barlinek_piccolo' %}">Piccolo</a></li>
+    <li class="page-item"><a  class="btn btn-success" href="#">Molti</a></li>
+    <li class="page-item">
+    </li>
+  </ul>
+{% endblock %}
