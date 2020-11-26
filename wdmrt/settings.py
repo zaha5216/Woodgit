@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'easy_thumbnails',
 ]
 
-AUTH_USER_MODEL = 'main.AdvUser'
+# AUTH_USER_MODEL = 'main.AdvUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

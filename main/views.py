@@ -20,10 +20,6 @@ from django.contrib import messages
 from django.core.paginator import Paginator
 from django.db.models import Q
 from django.shortcuts import redirect
-# from .forms import Comment
-
-from .models import AdvUser
-from .utilities import signer
 
 
 def index(request):
@@ -101,12 +97,14 @@ def barlinek_page(request, page):
         raise Http404
     return HttpResponse(template.render(request=request))
 
+
 def askania_page(request, page):
     try:
         template = get_template('main/' + page + '.html')
     except TemplateDoesNotExist:
         raise Http404
     return HttpResponse(template.render(request=request))
+
 
 def almond_page(request, page):
     try:
@@ -122,6 +120,7 @@ def askania_grande(request, page):
     except TemplateDoesNotExist:
         raise Http404
     return HttpResponse(template.render(request=request))
+
 
 def calvados_grande(request, page):
     try:
@@ -169,7 +168,6 @@ def yasen_coffe_grande(request, page):
     except TemplateDoesNotExist:
         raise Http404
     return HttpResponse(template.render(request=request))
-
 
 
 def hazelnut_grande(request, page):
@@ -289,7 +287,5 @@ def profile(request):
     bbs = Bb.objects.filter(author=request.user.pk)
     context = {'bbs': bbs}
     return render(request, 'main/profile.html', context)
-
-
 
 # Create your views here.
